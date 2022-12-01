@@ -1,4 +1,4 @@
-
+/*Page Structure*/
 *{
 	box-sizing: border-box;
 	margin: 0px;
@@ -24,8 +24,13 @@ body{
 	background-color: var(--white-color);
 
 	font-family: serif, sans-serif;
+/*	font-family: 'Nerko One', cursive;*/
+/*	font-family: 'Bebas Neue', cursive;*/
 	color: #2d232e;
 	font-size: 1.25em;
+	text-align: justify;
+  	text-justify: inter-word;
+
 	padding: 0px 50px 0px 50px;
 }
 li{
@@ -33,6 +38,8 @@ li{
 	padding-left: 25px;
 }
 
+
+/*Header Footer*/
 .highlight
 {
 	opacity: 1;
@@ -46,6 +53,26 @@ li{
 .top, footer{
 	text-align: center;
 }
+
+#go-to-top{
+	float: right;
+	margin-right: 10px;
+	padding: 0px 5px 0px 5px;
+	font-weight: bolder;
+	border: 3px solid;
+	border-bottom: 0px solid;
+}
+#go-to-top:link, #go-to-top:visited{
+	background-color: var(--white-color);
+	border-color: var(--secondary-color);
+}
+#go-to-top:hover, #go-to-top:active{
+	color : var(--white-color);
+	background-color: var(--secondary-color);
+	border-color: var(--white-color);
+}
+
+/*Color Schemes*/
 .color-box{
 	margin: 50px 0px 50px 0px;
 }
@@ -53,6 +80,9 @@ li{
 	padding: 20px 30px 20px 30px;
 	border-radius: 100%;
 	margin: 0px 10px 0px 10px;
+}
+.color-pallete:hover{
+	padding: 25px 35px 25px 35px;
 }
 .color1{
 	background-color: var(--primary-color);
@@ -75,24 +105,23 @@ li{
 .colorB{
 	background-color: var(--black-color);
 }
-#go-to-top{
-	float: right;
-	margin-right: 10px;
-	padding: 0px 5px 0px 5px;
-	font-weight: bolder;
-	border: 3px solid;
-	border-bottom: 0px solid;
-}
-#go-to-top:link, #go-to-top:visited{
-	background-color: var(--white-color);
-	border-color: var(--secondary-color);
-}
-#go-to-top:hover, #go-to-top:active{
-	color : var(--white-color);
-	background-color: var(--secondary-color);
-	border-color: var(--white-color);
-}
 
+/*Typographies*/
+.col-6{
+	float: left;
+	width: 50%;
+	padding: 2%;
+}
+.nerko-one{
+		font-family: 'Nerko One', cursive;
+}
+.bebas-neue{
+	font-family: 'Bebas Neue', cursive;
+}
+.center{
+	text-align: center;	
+}
+/**/
 a{
 	text-decoration: none;
 }
@@ -100,12 +129,20 @@ a:link, a:visited{
 	color: var(--black-color);
 }
 a:hover, a:active{
+	color: var(--secondary-color);
+/*	font-size: 1.05em;*/
+}
+.highlight a:hover, .highlight a:active{
 	color: var(--white-color);
-	font-size: 1.05em;
+/*	font-size: 1.05em;*/
 }
 
-h1,h2,h3{
+h1,h2,h3,h4{
 	color: var(--ternary-color);
+}
+h4{
+	font-size: 1.10em;
+	margin-top: 15px;
 }
 h3{
 	font-size: 1.25em;
@@ -122,4 +159,5 @@ h1{
 hr{
 	margin-top: 20px;
 	margin-bottom: 20px;
+	clear: both;
 }
