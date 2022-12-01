@@ -1,17 +1,32 @@
-* {
+
+*{
 	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
 }
+:root{
+	--white-color: #e4f6f7;
+	--black-color: #2d232e;
 
+	--primary-color: #369f88;
+	--secondary-color: #158b92;
+	--ternary-color: #1c5177;
+	--extra-color1: #24235b;
+	--extra-color2: #521b55;
+
+	/*--primary-color: #521b55;
+	--secondary-color: #24235b;
+	--ternary-color: #1c5177;
+	--extra-color1: #158b92;
+	--extra-color2: #369f88;*/
+}
 body{
-	font-family: serif, sans-serif;
-	background-color: #dee1e3;
-	
-	
+	background-color: var(--white-color);
 
-	color: darkslategray;
+	font-family: serif, sans-serif;
+	color: #2d232e;
 	font-size: 1.25em;
+	padding: 0px 50px 0px 50px;
 }
 li{
 	list-style: none;
@@ -20,14 +35,45 @@ li{
 
 .highlight
 {
-	background-color: lightsteelblue; 
 	opacity: 1;
-	border: 5px solid steelblue;
+	background-color: var(--primary-color); 
+	border: 5px solid var(--secondary-color);
 	border-left: 0px;
 	border-right: 0px;
+	margin-right: -50px;
+	margin-left: -50px;
 }
 .top, footer{
 	text-align: center;
+}
+.color-box{
+	margin: 50px 0px 50px 0px;
+}
+.color-pallete{
+	padding: 20px 30px 20px 30px;
+	border-radius: 100%;
+	margin: 0px 10px 0px 10px;
+}
+.color1{
+	background-color: var(--primary-color);
+}
+.color2{
+	background-color: var(--secondary-color);
+}
+.color3{
+	background-color: var(--ternary-color);
+}
+.color4{
+	background-color: var(--extra-color1);
+}
+.color5{
+	background-color: var(--extra-color2);
+}
+.colorW{
+	background-color: var(--white-color);
+}
+.colorB{
+	background-color: var(--black-color);
 }
 #go-to-top{
 	float: right;
@@ -38,29 +84,28 @@ li{
 	border-bottom: 0px solid;
 }
 #go-to-top:link, #go-to-top:visited{
-	background-color: #dee1e3;
-	color: darkslategray;
-	border-color: steelblue;
+	background-color: var(--white-color);
+	border-color: var(--secondary-color);
 }
 #go-to-top:hover, #go-to-top:active{
-	color : #dee1e3;
-	background-color: darkslategray;
-	border-color: #dee1e3;
+	color : var(--white-color);
+	background-color: var(--secondary-color);
+	border-color: var(--white-color);
 }
 
 a{
 	text-decoration: none;
 }
 a:link, a:visited{
-	color: darkslategray;
+	color: var(--black-color);
 }
 a:hover, a:active{
-	color: white;
+	color: var(--white-color);
 	font-size: 1.05em;
 }
 
 h1,h2,h3{
-	color: steelblue;
+	color: var(--ternary-color);
 }
 h3{
 	font-size: 1.25em;
@@ -74,7 +119,6 @@ h1{
 	font-size: 2.0em;
 	margin-top: 25px;
 }
-
 hr{
 	margin-top: 20px;
 	margin-bottom: 20px;
